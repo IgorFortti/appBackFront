@@ -22,6 +22,7 @@
 		FAC6DC9F299D01ED00054D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC6DC9D299D01ED00054D89 /* LaunchScreen.storyboard */; };
 		FAC6DCA7299D050700054D89 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DCA6299D050700054D89 /* LoginScreen.swift */; };
 		FACC76B429A4441E0029D734 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC76B329A4441E0029D734 /* String+Extension.swift */; };
+		FADBF8AC29A6885D00AD004F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADBF8AB29A6885D00AD004F /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FAC6DCA0299D01ED00054D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC6DCA6299D050700054D89 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		FACC76B329A4441E0029D734 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FADBF8AB29A6885D00AD004F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeScreen.swift; path = ../../../../../Documents/HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		FAC359D529A65BB0005A2CFF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FADBF8AA29A6884200AD004F /* Screen */,
 				FAC359D629A65BDB005A2CFF /* HomeVC.swift */,
 			);
 			path = Home;
@@ -170,6 +173,14 @@
 				FA8BEFE029A423AE00B43247 /* Screen */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		FADBF8AA29A6884200AD004F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FADBF8AB29A6885D00AD004F /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				FAC359D729A65BDB005A2CFF /* HomeVC.swift in Sources */,
 				FAC6DCA7299D050700054D89 /* LoginScreen.swift in Sources */,
 				FACC76B429A4441E0029D734 /* String+Extension.swift in Sources */,
+				FADBF8AC29A6885D00AD004F /* HomeScreen.swift in Sources */,
 				FAC359DB29A65C50005A2CFF /* TabBarVC.swift in Sources */,
 				FAC6DC93299D01EA00054D89 /* AppDelegate.swift in Sources */,
 				FA8BEFF129A42D3300B43247 /* UIViewController+Extesion.swift in Sources */,
