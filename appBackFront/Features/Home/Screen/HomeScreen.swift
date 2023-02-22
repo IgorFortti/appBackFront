@@ -37,7 +37,7 @@ class HomeScreen: UIView {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
-//        TO DO: REGISTER
+        //        TO DO: REGISTER
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24)
         layout.scrollDirection = .horizontal
@@ -48,7 +48,7 @@ class HomeScreen: UIView {
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-//       TO DO: REGISTER
+        //       TO DO: REGISTER
         tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         tableView.separatorStyle = .none
         return tableView
@@ -57,6 +57,7 @@ class HomeScreen: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addViews()
+        configCosntraints()
     }
     
     func addViews() {
@@ -69,5 +70,34 @@ class HomeScreen: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configCosntraints() {
+        NSLayoutConstraint.activate([
+            viewBackGround.topAnchor.constraint(equalTo: topAnchor),
+            viewBackGround.leadingAnchor.constraint(equalTo: leadingAnchor),
+            viewBackGround.trailingAnchor.constraint(equalTo: trailingAnchor),
+            viewBackGround.heightAnchor.constraint(equalToConstant: 220),
+            
+            logoImageView.topAnchor.constraint(equalTo: viewBackGround.topAnchor, constant: 45),
+            logoImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
+            logoImageView.heightAnchor.constraint(equalToConstant: 40),
+            logoImageView.widthAnchor.constraint(equalToConstant: 40),
+            
+            searchBar.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 10),
+            searchBar.leadingAnchor.constraint(equalTo: logoImageView.leadingAnchor),
+            searchBar.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
+            searchBar.heightAnchor.constraint(equalToConstant: 46),
+            
+            collectionView.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 15),
+            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: viewBackGround.bottomAnchor),
+            
+            collectionView.topAnchor.constraint(equalTo: collectionView.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+        ])
     }
 }
