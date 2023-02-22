@@ -54,8 +54,24 @@ class HomeScreen: UIView {
         return tableView
     }()
     
+    
+    func configTableViewProtocols(delegate: UITableViewDelegate, datasource: UITableViewDataSource) {
+        tableView.delegate = delegate
+        tableView.dataSource = datasource
+    }
+    
+    func configCollectionViewViewProtocols(delegate: UICollectionViewDelegate, datasource: UICollectionViewDataSource) {
+        collectionView.delegate = delegate
+        collectionView.dataSource = datasource
+    }
+    
+    func configSearchBarDelegate(delegate: UISearchBarDelegate) {
+        searchBar.delegate = delegate
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         addViews()
         configCosntraints()
     }
@@ -74,12 +90,12 @@ class HomeScreen: UIView {
     
     func configCosntraints() {
         NSLayoutConstraint.activate([
-            viewBackGround.topAnchor.constraint(equalTo: topAnchor),
+            viewBackGround.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             viewBackGround.leadingAnchor.constraint(equalTo: leadingAnchor),
             viewBackGround.trailingAnchor.constraint(equalTo: trailingAnchor),
-            viewBackGround.heightAnchor.constraint(equalToConstant: 220),
+            viewBackGround.heightAnchor.constraint(equalToConstant: 200),
             
-            logoImageView.topAnchor.constraint(equalTo: viewBackGround.topAnchor, constant: 45),
+            logoImageView.topAnchor.constraint(equalTo: viewBackGround.topAnchor, constant: 5),
             logoImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             logoImageView.heightAnchor.constraint(equalToConstant: 40),
             logoImageView.widthAnchor.constraint(equalToConstant: 40),
