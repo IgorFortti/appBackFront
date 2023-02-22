@@ -12,6 +12,8 @@
 		FA8BEFEA29A428DF00B43247 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA8BEFE929A428DF00B43247 /* FirebaseCrashlytics */; };
 		FA8BEFEC29A42A7C00B43247 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BEFEB29A42A7C00B43247 /* LoginViewModel.swift */; };
 		FA8BEFF129A42D3300B43247 /* UIViewController+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BEFF029A42D3300B43247 /* UIViewController+Extesion.swift */; };
+		FAC359D729A65BDB005A2CFF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC359D629A65BDB005A2CFF /* HomeVC.swift */; };
+		FAC359DB29A65C50005A2CFF /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC359DA29A65C50005A2CFF /* TabBarVC.swift */; };
 		FAC6DC93299D01EA00054D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DC92299D01EA00054D89 /* AppDelegate.swift */; };
 		FAC6DC95299D01EA00054D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DC94299D01EA00054D89 /* SceneDelegate.swift */; };
 		FAC6DC97299D01EA00054D89 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6DC96299D01EA00054D89 /* LoginVC.swift */; };
@@ -25,6 +27,8 @@
 		FA8BEFE429A4274900B43247 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA8BEFEB29A42A7C00B43247 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FA8BEFF029A42D3300B43247 /* UIViewController+Extesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extesion.swift"; sourceTree = "<group>"; };
+		FAC359D629A65BDB005A2CFF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FAC359DA29A65C50005A2CFF /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		FAC6DC8F299D01EA00054D89 /* appBackFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appBackFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC6DC92299D01EA00054D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC6DC94299D01EA00054D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,31 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		FAC359D429A65B8F005A2CFF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FAC359D529A65BB0005A2CFF /* Home */,
+				FAC6DCA8299D051500054D89 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FAC359D529A65BB0005A2CFF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAC359D629A65BDB005A2CFF /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAC359DC29A65CF6005A2CFF /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FAC359DA29A65C50005A2CFF /* TabBarVC.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		FAC6DC86299D01EA00054D89 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +138,9 @@
 		FAC6DC91299D01EA00054D89 /* appBackFront */ = {
 			isa = PBXGroup;
 			children = (
+				FAC359D429A65B8F005A2CFF /* Features */,
+				FAC359DC29A65CF6005A2CFF /* TabBarController */,
 				FA8BEFEE29A42CA100B43247 /* Utils */,
-				FAC6DCA8299D051500054D89 /* Login */,
 				FAC6DC92299D01EA00054D89 /* AppDelegate.swift */,
 				FAC6DC94299D01EA00054D89 /* SceneDelegate.swift */,
 				FAC6DC9B299D01ED00054D89 /* Assets.xcassets */,
@@ -210,8 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC6DC97299D01EA00054D89 /* LoginVC.swift in Sources */,
+				FAC359D729A65BDB005A2CFF /* HomeVC.swift in Sources */,
 				FAC6DCA7299D050700054D89 /* LoginScreen.swift in Sources */,
 				FACC76B429A4441E0029D734 /* String+Extension.swift in Sources */,
+				FAC359DB29A65C50005A2CFF /* TabBarVC.swift in Sources */,
 				FAC6DC93299D01EA00054D89 /* AppDelegate.swift in Sources */,
 				FA8BEFF129A42D3300B43247 /* UIViewController+Extesion.swift in Sources */,
 				FA8BEFEC29A42A7C00B43247 /* LoginViewModel.swift in Sources */,
