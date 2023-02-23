@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2BC1C629A6AE770038A263 /* HomeService */,
-				FA2BC1C429A6AE3B0038A263 /* HomeService.swift */,
+				FA2BC1C729A6AE980038A263 /* GenericService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -109,6 +109,7 @@
 		FA2BC1C629A6AE770038A263 /* HomeService */ = {
 			isa = PBXGroup;
 			children = (
+				FA2BC1C429A6AE3B0038A263 /* HomeService.swift */,
 			);
 			path = HomeService;
 			sourceTree = "<group>";
@@ -229,7 +230,6 @@
 				FA2BC1CC29A6B2CC0038A263 /* Model */,
 				FA2BC1C929A6B09F0038A263 /* Json */,
 				FA2BC1C329A6AE210038A263 /* Service */,
-				FA2BC1C729A6AE980038A263 /* GenericService.swift */,
 				FAC359D429A65B8F005A2CFF /* Features */,
 				FAC359DC29A65CF6005A2CFF /* TabBarController */,
 				FA9C5B2D29A67E52001A8C52 /* Alert */,
