@@ -33,8 +33,6 @@ class HomeService: HomeServiceDelegate {
         }
     }
     
-    
-    
     func getHomeDataFromJson(completion: @escaping completion<NFTData?>) {
         if let url = Bundle.main.url(forResource: "HomeData", withExtension: "json") {
             do {

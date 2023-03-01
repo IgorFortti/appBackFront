@@ -161,7 +161,7 @@ class LoginScreen: UIView {
         label.textAlignment = .center
         return label
     }()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addElements()
@@ -172,7 +172,7 @@ class LoginScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func addElements() {
+    private func addElements() {
         addSubview(subImageView)
         addSubview(logoImageView)
         addSubview(loginLabel)
@@ -188,7 +188,7 @@ class LoginScreen: UIView {
         signInMetamaskView.addSubview(signInMetamaskLabel)
     }
     
-    func configConstraints() {
+    private func configConstraints() {
         NSLayoutConstraint.activate([
             subImageView.topAnchor.constraint(equalTo: topAnchor),
             subImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -255,5 +255,4 @@ class LoginScreen: UIView {
         emailTextField.delegate = delegate
         passwordTextField.delegate = delegate
     }
-    
 }

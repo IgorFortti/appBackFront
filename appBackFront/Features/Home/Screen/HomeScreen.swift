@@ -55,17 +55,17 @@ class HomeScreen: UIView {
     }()
     
     
-    func configTableViewProtocols(delegate: UITableViewDelegate, datasource: UITableViewDataSource) {
+    public func configTableViewProtocols(delegate: UITableViewDelegate, datasource: UITableViewDataSource) {
         tableView.delegate = delegate
         tableView.dataSource = datasource
     }
     
-    func configCollectionViewViewProtocols(delegate: UICollectionViewDelegate, datasource: UICollectionViewDataSource) {
+    public func configCollectionViewViewProtocols(delegate: UICollectionViewDelegate, datasource: UICollectionViewDataSource) {
         collectionView.delegate = delegate
         collectionView.dataSource = datasource
     }
     
-    func configSearchBarDelegate(delegate: UISearchBarDelegate) {
+    public func configSearchBarDelegate(delegate: UISearchBarDelegate) {
         searchBar.delegate = delegate
     }
     
@@ -76,7 +76,7 @@ class HomeScreen: UIView {
         configCosntraints()
     }
     
-    func addViews() {
+    private func addViews() {
         addSubview(viewBackGround)
         viewBackGround.addSubview(logoImageView)
         viewBackGround.addSubview(searchBar)
@@ -88,12 +88,12 @@ class HomeScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configCosntraints() {
+    private func configCosntraints() {
         NSLayoutConstraint.activate([
             viewBackGround.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             viewBackGround.leadingAnchor.constraint(equalTo: leadingAnchor),
             viewBackGround.trailingAnchor.constraint(equalTo: trailingAnchor),
-            viewBackGround.heightAnchor.constraint(equalToConstant: 200),
+            viewBackGround.heightAnchor.constraint(equalToConstant: 160),
             
             logoImageView.topAnchor.constraint(equalTo: viewBackGround.topAnchor, constant: 5),
             logoImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
@@ -110,10 +110,10 @@ class HomeScreen: UIView {
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: viewBackGround.bottomAnchor),
             
-            collectionView.topAnchor.constraint(equalTo: collectionView.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            tableView.topAnchor.constraint(equalTo: collectionView.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 }

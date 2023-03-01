@@ -12,7 +12,7 @@ struct NFTData: Codable {
     var logoImage: LogoImage?
     var filterListNft: [FilterNft]?
     var nftList: [Nft]?
-
+    
     enum CodingKeys: String, CodingKey {
         case logoImage = "logo_image"
         case filterListNft = "filter_nft"
@@ -45,7 +45,7 @@ struct Nft: Codable {
     var nftNameImage, nftDescription: String?
     var titleLatestDeals: String?
     var latestDeals: [LatestDeal]?
-
+    
     enum CodingKeys: String, CodingKey {
         case ownedBy = "owned_by"
         case price, type
@@ -67,7 +67,7 @@ struct LatestDeal: Codable {
     var userImage: String?
     var nftPrice: Double?
     var lastAccess: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case userName = "user_name"
         case userImage = "user_image"

@@ -27,7 +27,7 @@ class NftFilterCollectionViewCellScreen: UIView {
         configConstraints()
     }
     
-    func addViews() {
+    private func addViews() {
         addSubview(filterLabel)
     }
     
@@ -35,12 +35,12 @@ class NftFilterCollectionViewCellScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configConstraints() {
+    private func configConstraints() {
         NSLayoutConstraint.activate([
-            filterLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            filterLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            filterLabel.heightAnchor.constraint(equalToConstant: 34),
-            filterLabel.widthAnchor.constraint(equalToConstant: 100),
+            filterLabel.topAnchor.constraint(equalTo: topAnchor),
+            filterLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            filterLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+            filterLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 }

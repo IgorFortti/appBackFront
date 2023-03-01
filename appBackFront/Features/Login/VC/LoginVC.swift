@@ -10,16 +10,16 @@ import FirebaseAuth
 
 class LoginVC: UIViewController {
     
-    var loginScreen: LoginScreen?
-    var auth: Auth?
-    var alert: AlertController?
+    private var loginScreen: LoginScreen?
+    private var auth: Auth?
+    private var alert: AlertController?
     
     override func loadView() {
         loginScreen = LoginScreen()
         alert = AlertController(controller: self)
         self.view = loginScreen
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissKeyBoard()
@@ -29,7 +29,7 @@ class LoginVC: UIViewController {
         isEnabledLoginButton(false)
     }
     
-    func validateTextFields() {
+    private func validateTextFields() {
         if (loginScreen?.emailTextField.text ?? "").isValid(validType: .email) &&
             (loginScreen?.passwordTextField.text ?? "").isValid(validType: .password) {
             isEnabledLoginButton(true)
@@ -38,7 +38,7 @@ class LoginVC: UIViewController {
         }
     }
     
-    func isEnabledLoginButton(_ isEnabled: Bool) {
+    private func isEnabledLoginButton(_ isEnabled: Bool) {
         if isEnabled {
             loginScreen?.loginButton.setTitleColor(.white, for: .normal)
             loginScreen?.loginButton.isEnabled = true
@@ -96,7 +96,7 @@ extension LoginVC: UITextFieldDelegate {
         }
         validateTextFields()
     }
-
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
