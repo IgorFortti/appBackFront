@@ -25,17 +25,28 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         viewModel.delegate(delegate: self)
         viewModel.fetchRequest(.request)
-        
     }
 }
 
 extension HomeVC: HomeViewModelDelegate {
     func success() {
         print(#function)
+        screen?.configCollectionViewViewProtocols(delegate: self, datasource: self)
     }
     
     func error() {
         print(#function)
+    }
+}
+
+extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
     }
     
     
