@@ -6,18 +6,45 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class NftDescriptionTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    static let identifier: String = String(describing: NftDescriptionTableViewCell.self)
+    
+    lazy var screen: NftDescriptionTableViewCellScreen = {
+        let view = NftDescriptionTableViewCellScreen()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        addViews()
+        configConstraints()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func addViews() {
+        contentView.addSubview(screen)
+        configConstraints()
     }
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func configConstraints() {
+        NSLayoutConstraint.activate([
+            screen.topAnchor.constraint(equalTo: topAnchor),
+            screen.leadingAnchor.constraint(equalTo: leadingAnchor),
+            screen.trailingAnchor.constraint(equalTo: trailingAnchor),
+            screen.bottomAnchor.constraint(equalTo: bottomAnchor),
+        ])
+    }
+    
+    public func setupCell(id: Int, title: String, description: String) {
+        screen.idLabel.text = "\(id)"
+        screen.titleLabel.text = title
+        screen.descriptionLabel.text = description
+    }
 }

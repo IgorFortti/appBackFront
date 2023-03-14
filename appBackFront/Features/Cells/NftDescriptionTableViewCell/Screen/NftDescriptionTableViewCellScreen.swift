@@ -8,13 +8,65 @@
 import UIKit
 
 class NftDescriptionTableViewCellScreen: UIView {
+    
+    lazy var idLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        label.textColor = UIColor(red: 240/255, green: 156/255, blue: 248/255, alpha: 1)
+        return label
+    }()
+    
+    lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
+        label.textColor = .white
+        return label
+    }()
+    
+    lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        label.textColor = .white
+        label.numberOfLines = 0
+        return label
+    }()
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)
+        addViews()
+        configConstraits()
     }
-    */
-
+    
+    private func addViews() {
+        addSubview(idLabel)
+        addSubview(titleLabel)
+        addSubview(descriptionLabel)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func configConstraits() {
+        NSLayoutConstraint.activate([
+            idLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            idLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            idLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            idLabel.heightAnchor.constraint(equalToConstant: 24),
+            
+            titleLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor, constant: 5),
+            titleLabel.leadingAnchor.constraint(equalTo: idLabel.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: idLabel.trailingAnchor),
+            titleLabel.heightAnchor.constraint(equalToConstant: 24),
+            
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5),
+            descriptionLabel.leadingAnchor.constraint(equalTo: idLabel.leadingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: idLabel.trailingAnchor),
+            descriptionLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
+        ])
+    }
 }
