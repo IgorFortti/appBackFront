@@ -43,7 +43,7 @@ class NftDescriptionTableViewCell: UITableViewCell {
     }
     
     public func setupCell(id: Int, title: String, description: String) {
-        screen.idLabel.text = "\(id)"
+        screen.idLabel.text = "#\(id)"
         screen.titleLabel.text = title
         screen.descriptionLabel.text = description
     }

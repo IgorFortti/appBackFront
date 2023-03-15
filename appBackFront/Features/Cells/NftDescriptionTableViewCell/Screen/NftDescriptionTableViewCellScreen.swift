@@ -12,7 +12,7 @@ class NftDescriptionTableViewCellScreen: UIView {
     lazy var idLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        label.font = UIFont.boldSystemFont(ofSize: 24)
         label.textColor = UIColor(red: 240/255, green: 156/255, blue: 248/255, alpha: 1)
         return label
     }()
@@ -20,7 +20,7 @@ class NftDescriptionTableViewCellScreen: UIView {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
+        label.font = UIFont.boldSystemFont(ofSize: 30)
         label.textColor = .white
         return label
     }()
@@ -28,7 +28,7 @@ class NftDescriptionTableViewCellScreen: UIView {
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .white
         label.numberOfLines = 0
         return label
@@ -61,7 +61,7 @@ class NftDescriptionTableViewCellScreen: UIView {
             titleLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor, constant: 5),
             titleLabel.leadingAnchor.constraint(equalTo: idLabel.leadingAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: idLabel.trailingAnchor),
-            titleLabel.heightAnchor.constraint(equalToConstant: 24),
+            titleLabel.heightAnchor.constraint(equalToConstant: 30),
             
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5),
             descriptionLabel.leadingAnchor.constraint(equalTo: idLabel.leadingAnchor),
