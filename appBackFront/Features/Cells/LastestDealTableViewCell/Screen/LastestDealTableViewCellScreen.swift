@@ -20,7 +20,7 @@ class LastestDealTableViewCellScreen: UIView {
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        //Register
+        tableView.register(ListOffersTableViewCell.self, forCellReuseIdentifier: ListOffersTableViewCell.identifier)
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
         tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)

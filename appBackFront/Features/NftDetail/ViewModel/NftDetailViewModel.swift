@@ -46,7 +46,7 @@ class NftDetailViewModel {
         case .description:
             return nftDescription.height(withConstrainedWidth: width - 40, font: UIFont.systemFont(ofSize: 18)) + 89
         case .lastestDeal:
-            return 400
+            return 800
         default:
             return 0
         }
