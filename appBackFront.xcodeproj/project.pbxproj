@@ -45,6 +45,8 @@
 		FAE3FC6029A6971F00820ACF /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3FC5F29A6971F00820ACF /* HomeScreen.swift */; };
 		FAEA1B5D29CB3FFB007D50B6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1B5C29CB3FFB007D50B6 /* UIView+Extension.swift */; };
 		FAEA1B5F29CB40AF007D50B6 /* CACornerMask+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1B5E29CB40AF007D50B6 /* CACornerMask+Extension.swift */; };
+		FAEA1B6229CB5005007D50B6 /* MagnifyingGlassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1B6129CB5005007D50B6 /* MagnifyingGlassVC.swift */; };
+		FAEA1B6529CB5080007D50B6 /* MagnifyingGlassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1B6429CB5080007D50B6 /* MagnifyingGlassScreen.swift */; };
 		FAF298A129AFD9190024BFE2 /* NftTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF298A029AFD9190024BFE2 /* NftTableViewCellScreen.swift */; };
 		FAF298A329AFD9340024BFE2 /* NftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF298A229AFD9340024BFE2 /* NftTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +92,8 @@
 		FAE3FC5F29A6971F00820ACF /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		FAEA1B5C29CB3FFB007D50B6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FAEA1B5E29CB40AF007D50B6 /* CACornerMask+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+Extension.swift"; sourceTree = "<group>"; };
+		FAEA1B6129CB5005007D50B6 /* MagnifyingGlassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassVC.swift; sourceTree = "<group>"; };
+		FAEA1B6429CB5080007D50B6 /* MagnifyingGlassScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassScreen.swift; sourceTree = "<group>"; };
 		FAF298A029AFD9190024BFE2 /* NftTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCellScreen.swift; sourceTree = "<group>"; };
 		FAF298A229AFD9340024BFE2 /* NftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -327,6 +331,7 @@
 		FAC359D429A65B8F005A2CFF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				FAEA1B6029CB4FEB007D50B6 /* MagnifyingGlass */,
 				FA76957929C0F18600C80FC9 /* NftDetail */,
 				FABB021C29AFC57B008C434E /* Cells */,
 				FAC359D529A65BB0005A2CFF /* Home */,
@@ -431,6 +436,23 @@
 			isa = PBXGroup;
 			children = (
 				FAE3FC5F29A6971F00820ACF /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		FAEA1B6029CB4FEB007D50B6 /* MagnifyingGlass */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA1B6329CB501E007D50B6 /* Screen */,
+				FAEA1B6129CB5005007D50B6 /* MagnifyingGlassVC.swift */,
+			);
+			path = MagnifyingGlass;
+			sourceTree = "<group>";
+		};
+		FAEA1B6329CB501E007D50B6 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA1B6429CB5080007D50B6 /* MagnifyingGlassScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -581,6 +603,7 @@
 				FABB021F29AFC5E5008C434E /* NftFilterCollectionViewCell.swift in Sources */,
 				FAC359D729A65BDB005A2CFF /* HomeVC.swift in Sources */,
 				FA76958D29C1089000C80FC9 /* NftDescriptionTableViewCellScreen.swift in Sources */,
+				FAEA1B6229CB5005007D50B6 /* MagnifyingGlassVC.swift in Sources */,
 				FAC6DCA7299D050700054D89 /* LoginScreen.swift in Sources */,
 				FA76958729C0FCAE00C80FC9 /* NftImageTableViewCellScreen.swift in Sources */,
 				FA7D011E29C3434B00835C4F /* ListOffersTableViewCell.swift in Sources */,
@@ -607,6 +630,7 @@
 				FAC3F81929C209860024DB6B /* LastestDealTableViewCellScreen.swift in Sources */,
 				FAF298A129AFD9190024BFE2 /* NftTableViewCellScreen.swift in Sources */,
 				FA9C5B2F29A67FBC001A8C52 /* AlertController.swift in Sources */,
+				FAEA1B6529CB5080007D50B6 /* MagnifyingGlassScreen.swift in Sources */,
 				FAC3F81729C209740024DB6B /* LastestDealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
