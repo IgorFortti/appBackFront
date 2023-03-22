@@ -55,6 +55,8 @@
 		FAF5F41B29CB7E4900B764AC /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5F41A29CB7E4900B764AC /* WalletService.swift */; };
 		FAF5F41D29CB80F100B764AC /* WalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5F41C29CB80F100B764AC /* WalletData.swift */; };
 		FAF5F42329CB836600B764AC /* WalletData.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF5F42229CB836600B764AC /* WalletData.json */; };
+		FAF5F42729CB9D0300B764AC /* QuotationEthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5F42629CB9D0300B764AC /* QuotationEthTableViewCell.swift */; };
+		FAF5F42929CB9D1900B764AC /* QuotationEthTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5F42829CB9D1900B764AC /* QuotationEthTableViewCellScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,8 @@
 		FAF5F41A29CB7E4900B764AC /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
 		FAF5F41C29CB80F100B764AC /* WalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletData.swift; sourceTree = "<group>"; };
 		FAF5F42229CB836600B764AC /* WalletData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WalletData.json; sourceTree = "<group>"; };
+		FAF5F42629CB9D0300B764AC /* QuotationEthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationEthTableViewCell.swift; sourceTree = "<group>"; };
+		FAF5F42829CB9D1900B764AC /* QuotationEthTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationEthTableViewCellScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +320,7 @@
 		FABB021C29AFC57B008C434E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FAF5F42429CB9CA300B764AC /* QuotationEthTableViewCell */,
 				FA7D011C29C3432D00835C4F /* ListOffersTableViewCell */,
 				FAC3F81429C2092F0024DB6B /* LastestDealTableViewCell */,
 				FA76958829C1083D00C80FC9 /* NftDescriptionTableViewCell */,
@@ -524,6 +529,23 @@
 			path = WalletService;
 			sourceTree = "<group>";
 		};
+		FAF5F42429CB9CA300B764AC /* QuotationEthTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5F42529CB9CD200B764AC /* Screen */,
+				FAF5F42629CB9D0300B764AC /* QuotationEthTableViewCell.swift */,
+			);
+			path = QuotationEthTableViewCell;
+			sourceTree = "<group>";
+		};
+		FAF5F42529CB9CD200B764AC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5F42829CB9D1900B764AC /* QuotationEthTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -650,6 +672,7 @@
 			files = (
 				FAC6DC97299D01EA00054D89 /* LoginVC.swift in Sources */,
 				FA2BC1C229A6AC580038A263 /* HomeViewModel.swift in Sources */,
+				FAF5F42929CB9D1900B764AC /* QuotationEthTableViewCellScreen.swift in Sources */,
 				FAE3FC6029A6971F00820ACF /* HomeScreen.swift in Sources */,
 				FABB021F29AFC5E5008C434E /* NftFilterCollectionViewCell.swift in Sources */,
 				FAC359D729A65BDB005A2CFF /* HomeVC.swift in Sources */,
@@ -665,6 +688,7 @@
 				FAF5F41D29CB80F100B764AC /* WalletData.swift in Sources */,
 				FAEA1B5F29CB40AF007D50B6 /* CACornerMask+Extension.swift in Sources */,
 				FA7D012129C343B200835C4F /* ListOffersTableViewCellScreen.swift in Sources */,
+				FAF5F42729CB9D0300B764AC /* QuotationEthTableViewCell.swift in Sources */,
 				FAC3F81C29C20C740024DB6B /* LastestDealTableViewCellViewModel.swift in Sources */,
 				FAC6DC93299D01EA00054D89 /* AppDelegate.swift in Sources */,
 				FA2BC1C529A6AE3B0038A263 /* HomeService.swift in Sources */,
