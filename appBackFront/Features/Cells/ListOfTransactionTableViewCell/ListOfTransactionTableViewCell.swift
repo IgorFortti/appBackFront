@@ -46,8 +46,8 @@ class ListOfTransactionTableViewCell: UITableViewCell {
     public func setupCell(data: ListOfTransaction, isInicial: Bool, isFinal: Bool) {
         screen.idTransactionLabel.text = data.idTransaction ?? ""
         screen.transactionImageView.image = UIImage(named: data.image ?? "")
-        screen.priceEthLabel.text = "\(data.priceEth ?? 0) ETH"
         screen.valueInDollarLabel.text = "US$\(data.valueDollar ?? 0)"
+        screen.dateEndHourLabel.text = data.dateAndHour ?? ""
         if data.type == "exit" {
             screen.priceEthLabel.text = "-\(data.priceEth ?? 0) ETH"
             screen.priceEthLabel.textColor = UIColor (red: 69/255, green: 191/255, blue: 229/255, alpha: 1)

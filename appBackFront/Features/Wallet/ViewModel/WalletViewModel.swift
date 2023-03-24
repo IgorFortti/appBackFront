@@ -50,7 +50,7 @@ class WalletViewModel {
         return 2
     }
     
-    public func loadCurrentQuotationEthereum(indexPath: IndexPath) -> QuotationEthereum {
+    public var quotationEthereum: QuotationEthereum {
         return walletData?.quotationEthereum ?? QuotationEthereum()
     }
     
@@ -63,5 +63,9 @@ class WalletViewModel {
         default:
             return 0
         }
+    }
+    
+    public var latestTransactionsCell: LatestTransactionsCell {
+        return walletData?.latestTransactionsCell ?? LatestTransactionsCell()
     }
 }
