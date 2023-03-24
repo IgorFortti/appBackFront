@@ -23,7 +23,7 @@ class LatestTransactionsTableViewCellScreen: UIView {
         tableView.register(ListOfTransactionTableViewCell.self, forCellReuseIdentifier: ListOfTransactionTableViewCell.identifier)
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
-        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)
+        tableView.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1)
         return tableView
     }()
     
@@ -35,7 +35,7 @@ class LatestTransactionsTableViewCellScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1)
         addViews()
         configConstraints()
     }
