@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum WalletNameCell: Int {
+    case quotationEth = 0
+    case transactionList = 1
+}
+
 class WalletVC: UIViewController {
     
     private var screen: WalletScreen?
@@ -46,9 +51,11 @@ extension WalletVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: QuotationEthTableViewCell.identifier, for: indexPath) as? QuotationEthTableViewCell
-        cell?.setupCell(data: viewModel.loadCurrentQuotationEthereum(indexPath: indexPath))
-        return cell ?? UITableViewCell()
+        switch WalletNameCell {
+            
+        default:
+            <#code#>
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -56,3 +63,7 @@ extension WalletVC: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+let cell = tableView.dequeueReusableCell(withIdentifier: QuotationEthTableViewCell.identifier, for: indexPath) as? QuotationEthTableViewCell
+cell?.setupCell(data: viewModel.loadCurrentQuotationEthereum(indexPath: indexPath))
+return cell ?? UITableViewCell()

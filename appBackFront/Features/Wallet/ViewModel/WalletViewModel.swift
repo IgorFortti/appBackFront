@@ -6,10 +6,7 @@
 //
 
 import UIKit
-
-enum WalletNameCell: Int {
-    case quotationEth = 1
-}
+import CoreGraphics
 
 protocol WalletViewModelDelegate: AnyObject {
     func success()
@@ -50,7 +47,7 @@ class WalletViewModel {
     }
     
     var numberOfRowsInSection: Int {
-        return 1
+        return 2
     }
     
     public func loadCurrentQuotationEthereum(indexPath: IndexPath) -> QuotationEthereum {
@@ -61,6 +58,8 @@ class WalletViewModel {
         switch WalletNameCell(rawValue: indexPath.row) {
         case .quotationEth:
             return 250
+        case .transactionList:
+            return HeightLatestTransactions.height.rawValue * CGFloat(walletData?.latestTransactionsCell?.listOfTransactions?.count ?? 0) + 75
         default:
             return 0
         }
