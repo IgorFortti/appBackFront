@@ -16,6 +16,7 @@ class WalletVC: UIViewController {
     
     private var screen: WalletScreen?
     private var viewModel: WalletViewModel = WalletViewModel()
+    
     override func loadView() {
         screen = WalletScreen()
         view = screen
