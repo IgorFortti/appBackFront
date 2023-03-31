@@ -38,6 +38,8 @@
 		FAA8379B29CE1F3F00C03F7B /* LatestTransactionTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8379A29CE1F3F00C03F7B /* LatestTransactionTableViewCellViewModel.swift */; };
 		FAA8379F29CE220200C03F7B /* ListOfTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8379E29CE220200C03F7B /* ListOfTransactionTableViewCell.swift */; };
 		FAA837A129CE222100C03F7B /* ListOfTransactionTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA837A029CE222100C03F7B /* ListOfTransactionTableViewCellScreen.swift */; };
+		FAA941C029D71BF2000DEEBD /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA941BF29D71BF2000DEEBD /* ProfileTableViewCell.swift */; };
+		FAA941C229D71C11000DEEBD /* ProfileTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA941C129D71C11000DEEBD /* ProfileTableViewCellScreen.swift */; };
 		FABB021F29AFC5E5008C434E /* NftFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB021E29AFC5E5008C434E /* NftFilterCollectionViewCell.swift */; };
 		FABB022129AFC66C008C434E /* NftFilterCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB022029AFC66C008C434E /* NftFilterCollectionViewCellScreen.swift */; };
 		FAC359D729A65BDB005A2CFF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC359D629A65BDB005A2CFF /* HomeVC.swift */; };
@@ -101,6 +103,8 @@
 		FAA8379A29CE1F3F00C03F7B /* LatestTransactionTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestTransactionTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		FAA8379E29CE220200C03F7B /* ListOfTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTransactionTableViewCell.swift; sourceTree = "<group>"; };
 		FAA837A029CE222100C03F7B /* ListOfTransactionTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTransactionTableViewCellScreen.swift; sourceTree = "<group>"; };
+		FAA941BF29D71BF2000DEEBD /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		FAA941C129D71C11000DEEBD /* ProfileTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCellScreen.swift; sourceTree = "<group>"; };
 		FABB021E29AFC5E5008C434E /* NftFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		FABB022029AFC66C008C434E /* NftFilterCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftFilterCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		FAC359D629A65BDB005A2CFF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -423,9 +427,27 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		FAA941BD29D71BB6000DEEBD /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAA941BE29D71BC5000DEEBD /* Screen */,
+				FAA941BF29D71BF2000DEEBD /* ProfileTableViewCell.swift */,
+			);
+			path = ProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		FAA941BE29D71BC5000DEEBD /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAA941C129D71C11000DEEBD /* ProfileTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		FABB021C29AFC57B008C434E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FAA941BD29D71BB6000DEEBD /* ProfileTableViewCell */,
 				FA7D01D329D1C611009E50BA /* ProfileImageTableViewCell */,
 				FAA8379C29CE219C00C03F7B /* ListOfTransactionTableViewCell */,
 				FAA8379329CE1B7500C03F7B /* LatestTransactionsTableViewCell */,
@@ -806,7 +828,9 @@
 				FAC6DC93299D01EA00054D89 /* AppDelegate.swift in Sources */,
 				FA2BC1C529A6AE3B0038A263 /* HomeService.swift in Sources */,
 				FA76958129C0F20400C80FC9 /* NftDetailScreen.swift in Sources */,
+				FAA941C229D71C11000DEEBD /* ProfileTableViewCellScreen.swift in Sources */,
 				FAF5F41229CB7A0100B764AC /* WalletVC.swift in Sources */,
+				FAA941C029D71BF2000DEEBD /* ProfileTableViewCell.swift in Sources */,
 				FAF5F41829CB7AA000B764AC /* WalletViewModel.swift in Sources */,
 				FA2BC1CE29A6B2F40038A263 /* NFTData.swift in Sources */,
 				FAEA1B5D29CB3FFB007D50B6 /* UIView+Extension.swift in Sources */,

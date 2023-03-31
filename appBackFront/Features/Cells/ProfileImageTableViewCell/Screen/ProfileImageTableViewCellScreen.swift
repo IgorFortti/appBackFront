@@ -9,16 +9,18 @@ import UIKit
 
 class ProfileImageTableViewCellScreen: UIView {
     
-    lazy var profileImageView: UIImageView = {
+    lazy var nftImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: "nft")
-        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.contentMode = .scaleToFill
         return imageView
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 1/255, alpha: 1.0)
         addViews()
         configConstraints()
     }
@@ -28,15 +30,15 @@ class ProfileImageTableViewCellScreen: UIView {
     }
     
     private func addViews() {
-        addSubview(profileImageView)
+        addSubview(nftImageView)
     }
     
     private func configConstraints() {
         NSLayoutConstraint.activate([
-            profileImageView.topAnchor.constraint(equalTo: topAnchor),
-            profileImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            profileImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            profileImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            nftImageView.topAnchor.constraint(equalTo: topAnchor),
+            nftImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            nftImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            nftImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 }
