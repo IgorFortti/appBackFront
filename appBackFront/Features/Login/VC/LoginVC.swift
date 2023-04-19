@@ -61,6 +61,9 @@ extension LoginVC: LoginScreenProtocol {
                 })
             } else {
                 print("Sucesso")
+                let vc: TabBarVC = TabBarVC()
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
             }
         })
     }

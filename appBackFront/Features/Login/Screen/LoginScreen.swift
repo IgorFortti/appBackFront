@@ -241,7 +241,7 @@ class LoginScreen: UIView {
             signInMetamaskView.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
             signInMetamaskView.heightAnchor.constraint(equalToConstant: 41),
             
-            signInMetamaskImageView.leadingAnchor.constraint(equalTo: signInMetamaskView.leadingAnchor, constant: 53),
+            signInMetamaskImageView.leadingAnchor.constraint(equalTo: signInMetamaskView.leadingAnchor, constant: 75),
             signInMetamaskImageView.centerYAnchor.constraint(equalTo: signInMetamaskView.centerYAnchor),
             signInMetamaskImageView.heightAnchor.constraint(equalToConstant: 20),
             signInMetamaskImageView.widthAnchor.constraint(equalToConstant: 20),
